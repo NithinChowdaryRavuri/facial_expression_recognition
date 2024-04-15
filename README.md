@@ -50,6 +50,29 @@ Once the app is running, follow these steps to use it:
 4. **Exit the App:**
    Press `q` key to exit the app.
 
+
+### Training the Model
+
+If you want to train the facial expression recognition model yourself or retrain it with custom data, follow these steps:
+
+1. **Prepare Training Data:**
+   Ensure you have training data prepared in the appropriate format. The training data should consist of labeled images of facial expressions. You can use the FER-2013 dataset or prepare your custom dataset.
+
+2. **Modify `gen.py`:**
+   Open the `gen.py` Python script and modify it according to your training data. Update the paths to your training and testing samples, and adjust any other parameters as needed.
+
+3. **Run `gen.py`:**
+   Execute the `gen.py` script to start training the model. This script will preprocess the data, train the CNN model, and save the trained weights.
+
+4. **Evaluate Model Performance:**
+   After training, evaluate the performance of the model on your testing data to ensure it achieves satisfactory accuracy and generalization.
+
+5. **Integrate Trained Model:**
+   Once you are satisfied with the trained model's performance, integrate it into the Facial Expression Recognition app by replacing the existing pre-trained model file with your newly trained weights.
+
+### Note
+Ensure you have sufficient computational resources for training the model, especially if working with large datasets or complex CNN architectures. Additionally, consider using techniques like data augmentation and transfer learning to improve model performance.
+
 ### License
 
 MIT license.
